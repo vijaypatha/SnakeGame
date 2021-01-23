@@ -17,6 +17,22 @@ screen.tracer(0)  # TODO 4 The tracer() function turns automatic screen updates 
 # -- and also sets the update() delay
 
 # start_positions = [(-200, 0), (-200, 100), (-200, -100)]
+# segment_1 = Turtle()
+# segment_1.shape("square")
+# segment_1.color("white")
+#
+#
+# segment_2 = Turtle()
+# segment_2.penup()
+# segment_2.shape("square")
+# segment_2.color("pink")
+# segment_2.goto(-20, 0)
+#
+# segment_3 = Turtle()
+# segment_3.penup()
+# segment_3.shape("square")
+# segment_3.color("red")
+# segment_3.goto(-40, 0)
 
 # TODO 1
 start_positions = [(0, 0), (-20, 0), (-40, 0)]
