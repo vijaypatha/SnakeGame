@@ -11,7 +11,11 @@ s.title("Snake Game")
 s.tracer(0)
 
 snake = Snake()
-
+s.listen()
+s.onkey(snake.up, "Up")
+s.onkey(snake.down, "Down")
+s.onkey(snake.left, "Left")
+s.onkey(snake.right, "Right")
 game_is_on = True
 
 while game_is_on:

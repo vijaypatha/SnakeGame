@@ -1,4 +1,5 @@
 from turtle import Turtle
+
 START_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]  # This is a constant. So ALL CAPs.
 MOVE_DISTANCE = 20
 
@@ -11,7 +12,7 @@ class Snake:
         # i.e when snake = Snake() is executed then we will call create_snake method
         self.combine_segments = []
         self.create_snake()
-
+        self.head = self.combine_segments[0]
 
     def create_snake(self):
         for position in START_POSITIONS:
@@ -26,5 +27,17 @@ class Snake:
             new_x = self.combine_segments[seg_num - 1].xcor()
             new_y = self.combine_segments[seg_num - 1].ycor()
             self.combine_segments[seg_num].goto(new_x, new_y)
-        self.combine_segments[0].forward(MOVE_DISTANCE)
-        #self.combine_segments[0].left(90)
+        self.head.forward(MOVE_DISTANCE)
+        # self.combine_segments[0].left(90)
+
+    def up(self):
+        self.head.setheading(90)
+
+    def down(self):
+        self.head.setheading(270)
+
+    def left(self):
+        self.head.setheading(180)
+
+    def right(self):
+        self.head.setheading(0)
